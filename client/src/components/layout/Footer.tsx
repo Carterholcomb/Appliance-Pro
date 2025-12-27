@@ -1,4 +1,4 @@
-import { Wrench, Facebook, Twitter, Instagram, Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Wrench, Facebook, Twitter, Instagram, Mail, Phone, Clock } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Footer() {
@@ -56,17 +56,13 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="font-display font-bold text-foreground text-lg">Contact Us</h3>
             <ul className="space-y-4 text-sm">
-              <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-primary shrink-0" />
-                <span>123 Repair Street, Suite 100<br />Cityville, ST 12345</span>
-              </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <span>(555) 123-4567</span>
+                <span>(813) 862-5547</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <span>service@mrfixit.com</span>
+                <span>callmrfixitappliance@gmail.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-primary shrink-0" />

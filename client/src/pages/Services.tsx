@@ -1,9 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { Link } from "wouter";
 import fridgeImage from "@assets/generated_images/refrigerator_repair_close_up.png";
-import ovenImage from "@assets/generated_images/oven_repair_service_image.png";
+import washerDryerImage from "@assets/generated_images/modern_washer_and_dryer_set_repair.png";
 
 export default function Services() {
   const services = [
@@ -14,22 +14,16 @@ export default function Services() {
       features: ["Temperature Issues", "Water Leaks", "Ice Maker Repair", "Compressor Replacement"]
     },
     {
+      title: "Washer & Dryer Repair",
+      description: "Stop the leaks and loud noises. We repair spin cycles, drainage issues, and electronic controls for laundry sets.",
+      image: washerDryerImage,
+      features: ["No Heat / No Spin", "Water Drainage", "Loud Noises", "Leak Repair"]
+    },
+    {
       title: "Oven & Stove Repair",
       description: "Gas or electric, we handle it all. From uneven heating to broken igniters and door hinges.",
-      image: ovenImage,
-      features: ["Uneven Heating", "Broken Igniters", "Door Repairs", "Control Board Issues"]
-    },
-    {
-      title: "Washing Machine Repair",
-      description: "Stop the leaks and loud noises. We repair spin cycles, drainage issues, and electronic controls.",
-      image: null, // Fallback to icon
-      features: ["Spin Cycle Issues", "Water Drainage", "Loud Noises", "Leak Repair"]
-    },
-    {
-      title: "Dryer Repair",
-      description: "Clothes taking too long to dry? We fix heating elements, belts, and vent issues.",
       image: null,
-      features: ["No Heat", "Drum Not Spinning", "Overheating", "Strange Noises"]
+      features: ["Uneven Heating", "Broken Igniters", "Door Repairs", "Control Board Issues"]
     },
     {
       title: "Dishwasher Repair",
@@ -51,7 +45,7 @@ export default function Services() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">Our Services</h1>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Comprehensive repair solutions for all your home appliances. We service all major brands and models.
+            Comprehensive repair solutions for all your home appliances. We service all major brands and models in Tampa Bay.
           </p>
         </div>
       </section>
@@ -115,8 +109,8 @@ export default function Services() {
             </Button>
             
             <Button variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-white" asChild>
-              <a href="tel:+15551234567">
-                Call (555) 123-4567
+              <a href="tel:813-862-5547">
+                Call (813) 862-5547
               </a>
             </Button>
           </div>

@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Phone, Mail, Clock } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -56,23 +56,11 @@ export default function Contact() {
               <Card className="border-none shadow-md">
                 <CardContent className="flex items-start gap-4 p-6">
                   <div className="bg-primary/10 p-3 rounded-full text-primary">
-                    <MapPin className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold mb-1">Our Office</h3>
-                    <p className="text-muted-foreground">123 Repair Street, Suite 100<br />Cityville, ST 12345</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-none shadow-md">
-                <CardContent className="flex items-start gap-4 p-6">
-                  <div className="bg-primary/10 p-3 rounded-full text-primary">
                     <Phone className="h-6 w-6" />
                   </div>
                   <div>
                     <h3 className="font-bold mb-1">Phone</h3>
-                    <p className="text-muted-foreground">Main: (555) 123-4567<br />Emergency: (555) 987-6543</p>
+                    <p className="text-muted-foreground">Main: (813) 862-5547</p>
                   </div>
                 </CardContent>
               </Card>
@@ -84,7 +72,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold mb-1">Email</h3>
-                    <p className="text-muted-foreground">General: info@mrfixit.com<br />Support: service@mrfixit.com</p>
+                    <p className="text-muted-foreground">callmrfixitappliance@gmail.com</p>
                   </div>
                 </CardContent>
               </Card>

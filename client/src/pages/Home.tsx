@@ -2,10 +2,11 @@ import Hero from "@/components/sections/Hero";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Clock, ShieldCheck, Wrench, ArrowRight, Star, Phone } from "lucide-react";
+import { Clock, ShieldCheck, Wrench, ArrowRight, Phone } from "lucide-react";
 import { Link } from "wouter";
 import truckImage from "@assets/Mr-Fix-It-Brand-Art-05_1766845255469.jpg";
 import fridgeImage from "@assets/generated_images/refrigerator_repair_close_up.png";
+import washerDryerImage from "@assets/generated_images/modern_washer_and_dryer_set_repair.png";
 
 export default function Home() {
   return (
@@ -100,6 +101,20 @@ export default function Home() {
               </CardContent>
             </Card>
 
+             {/* Washer & Dryer */}
+             <Card className="overflow-hidden group border-none shadow-md hover:shadow-xl transition-all duration-300">
+              <div className="h-48 overflow-hidden">
+                <img src={washerDryerImage} alt="Washer and Dryer Repair" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold font-display mb-2">Washer & Dryer</h3>
+                <p className="text-muted-foreground mb-4">Spin cycles, draining issues, heating elements. We get your laundry routine back on track.</p>
+                <Link href="/services" className="inline-flex items-center text-primary font-semibold hover:underline cursor-pointer">
+                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </CardContent>
+            </Card>
+
             {/* Oven */}
             <Card className="overflow-hidden group border-none shadow-md hover:shadow-xl transition-all duration-300">
               <div className="h-48 overflow-hidden bg-primary/5 flex items-center justify-center relative">
@@ -109,21 +124,6 @@ export default function Home() {
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold font-display mb-2">Oven & Stove Repair</h3>
                 <p className="text-muted-foreground mb-4">Temperature inconsistencies, burner failures, and door issues solved quickly.</p>
-                <Link href="/services" className="inline-flex items-center text-primary font-semibold hover:underline cursor-pointer">
-                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </CardContent>
-            </Card>
-
-             {/* Washer */}
-             <Card className="overflow-hidden group border-none shadow-md hover:shadow-xl transition-all duration-300">
-              <div className="h-48 overflow-hidden bg-primary/5 flex items-center justify-center relative">
-                 <Wrench className="h-16 w-16 text-primary/20" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-background/10 to-transparent"></div>
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-bold font-display mb-2">Washer & Dryer</h3>
-                <p className="text-muted-foreground mb-4">Spin cycles, draining issues, heating elements. We get your laundry routine back on track.</p>
                 <Link href="/services" className="inline-flex items-center text-primary font-semibold hover:underline cursor-pointer">
                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
