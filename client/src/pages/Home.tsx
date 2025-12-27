@@ -7,6 +7,7 @@ import { Link } from "wouter";
 import truckImage from "@assets/Mr-Fix-It-Brand-Art-05_1766845255469.jpg";
 import fridgeImage from "@assets/generated_images/refrigerator_repair_close_up.png";
 import washerDryerImage from "@assets/generated_images/modern_washer_and_dryer_set_repair.png";
+import ovenImage from "@assets/generated_images/modern_kitchen_oven_repair_service.png";
 
 export default function Home() {
   return (
@@ -117,9 +118,8 @@ export default function Home() {
 
             {/* Oven */}
             <Card className="overflow-hidden group border-none shadow-md hover:shadow-xl transition-all duration-300">
-              <div className="h-48 overflow-hidden bg-primary/5 flex items-center justify-center relative">
-                 <Wrench className="h-16 w-16 text-primary/20" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-background/10 to-transparent"></div>
+              <div className="h-48 overflow-hidden">
+                <img src={ovenImage} alt="Oven and Stove Repair" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold font-display mb-2">Oven & Stove Repair</h3>

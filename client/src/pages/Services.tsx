@@ -4,6 +4,9 @@ import { CheckCircle2 } from "lucide-react";
 import { Link } from "wouter";
 import fridgeImage from "@assets/generated_images/refrigerator_repair_close_up.png";
 import washerDryerImage from "@assets/generated_images/modern_washer_and_dryer_set_repair.png";
+import ovenImage from "@assets/generated_images/modern_kitchen_oven_repair_service.png";
+import dishwasherImage from "@assets/generated_images/modern_dishwasher_repair_service.png";
+import microwaveImage from "@assets/generated_images/modern_microwave_oven_repair_service.png";
 
 export default function Services() {
   const services = [
@@ -22,19 +25,19 @@ export default function Services() {
     {
       title: "Oven & Stove Repair",
       description: "Gas or electric, we handle it all. From uneven heating to broken igniters and door hinges.",
-      image: null,
+      image: ovenImage,
       features: ["Uneven Heating", "Broken Igniters", "Door Repairs", "Control Board Issues"]
     },
     {
       title: "Dishwasher Repair",
       description: "Dishes coming out dirty? We repair pumps, spray arms, and drainage systems.",
-      image: null,
+      image: dishwasherImage,
       features: ["Not Draining", "Poor Cleaning", "Leaking", "Door Latch Issues"]
     },
     {
       title: "Microwave Repair",
       description: "Built-in or countertop, we can fix heating issues, turntables, and control panels.",
-      image: null,
+      image: microwaveImage,
       features: ["Not Heating", "Turntable Broken", "Sparking", "Keypad Issues"]
     }
   ];
