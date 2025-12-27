@@ -1,8 +1,9 @@
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Wrench, Menu, X, Phone } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import logoImage from "@assets/50ebbc_ca66c26f5831429a81a6f9edf3e4a111~mv2_1766845236530.jpeg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +23,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group cursor-pointer">
-          <div className="bg-primary text-primary-foreground p-2 rounded-lg group-hover:scale-105 transition-transform duration-300">
-            <Wrench className="h-6 w-6" />
-          </div>
+          <img src={logoImage} alt="Mr. Fix-It Logo" className="h-14 w-auto object-contain group-hover:scale-105 transition-transform duration-300 rounded-full" />
           <div className="flex flex-col">
             <span className="font-display font-bold text-xl leading-none text-primary">Mr. Fix-It</span>
             <span className="text-xs text-muted-foreground tracking-widest uppercase">Appliance Repair</span>
@@ -48,9 +47,9 @@ export default function Navbar() {
 
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center gap-4">
-          <a href="tel:+15551234567" className="flex items-center gap-2 text-sm font-semibold text-foreground/80 hover:text-primary transition-colors">
+          <a href="tel:813-862-5547" className="flex items-center gap-2 text-sm font-semibold text-foreground/80 hover:text-primary transition-colors">
             <Phone className="h-4 w-4" />
-            (555) 123-4567
+            (813) 862-5547
           </a>
           <Button size="lg" className="shadow-md hover:shadow-lg transition-all" asChild>
             <Link href="/book">Book Service</Link>
@@ -86,7 +85,7 @@ export default function Navbar() {
                     <Link href="/book" onClick={() => setIsOpen(false)}>Book Service</Link>
                   </Button>
                   <Button variant="outline" className="w-full gap-2" asChild>
-                    <a href="tel:+15551234567">
+                    <a href="tel:813-862-5547">
                       <Phone className="h-4 w-4" /> Call Now
                     </a>
                   </Button>
