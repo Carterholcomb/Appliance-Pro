@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, Redirect } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Home from "@/pages/Home";
@@ -33,6 +33,12 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/book" component={BookService} />
+          
+          {/* Handle cases where Hostinger might redirect to index.html explicitly */}
+          <Route path="/index.html">
+            <Redirect to="/" />
+          </Route>
+
           <Route component={NotFound} />
         </Switch>
       </main>
